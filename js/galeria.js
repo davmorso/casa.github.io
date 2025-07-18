@@ -1,15 +1,38 @@
 const galeria = document.getElementById("galeria");
 
-for (let i = 1; i <= 24; i++) {
-  if (i === 17) continue; // Saltar casa17.jpg
+function crearTitulo(titulo) {
+  const h1 = document.createElement("h1");
+  h1.textContent = titulo;
+  galeria.appendChild(h1);
+}
+
+function agregarImagen(numero) {
+  if (numero === 10 || numero === 17) return; // Omitir casa10.jpg y casa17.jpg
 
   const img = document.createElement("img");
-  img.src = `img/casa${i}.jpeg`;
-  img.alt = `Casa ${i}`;
+  img.src = `img/casa${numero}.jpg`;
+  img.alt = `Casa ${numero}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
 }
 
+// PRIMER PISO: 18–24 + 16
+crearTitulo("Primer Piso");
+[18, 19, 20, 21, 22, 23, 24, 16].forEach(agregarImagen);
+
+// SEGUNDO PISO: 6–15 (sin la 10)
+crearTitulo("Segundo Piso");
+for (let i = 6; i <= 15; i++) {
+  agregarImagen(i);
+}
+
+// TERCER PISO: 1–5
+crearTitulo("Tercer Piso");
+for (let i = 1; i <= 5; i++) {
+  agregarImagen(i);
+}
+
+// Modal
 const modal = document.getElementById("modal");
 const imagenAmpliada = document.getElementById("imagen-ampliada");
 const caption = document.getElementById("caption");
