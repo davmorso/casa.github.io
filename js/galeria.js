@@ -7,7 +7,7 @@ function crearTitulo(titulo) {
 }
 
 function agregarImagen(numero) {
-  if (numero === 10 || numero === 17) return; // Omitir casa10.jpg y casa17.jpg
+  if (numero === 10 || numero === 17) return; // Omitir casa10.jpeg y casa17.jpeg
 
   const img = document.createElement("img");
   img.src = `img/casa${numero}.jpeg`;
