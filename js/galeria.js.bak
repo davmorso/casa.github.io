@@ -1,8 +1,8 @@
 const imagenes = [
-  { src: "img/sala.jpg", alt: "Sala principal" },
-  { src: "img/cocina.jpg", alt: "Cocina" },
-  { src: "img/jardin.jpg", alt: "Jardín" },
-  { src: "img/habitacion.jpg", alt: "Habitación" },
+  { src: "img/casa1.jpeg", alt: "Sala principal" },
+  { src: "img/casa2.jpeg", alt: "Cocina" },
+  { src: "img/casa3.jpeg", alt: "Jardín" },
+  { src: "img/casa4.jpeg", alt: "Habitación" },
 ];
 
 const galeria = document.getElementById("galeria");
