@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0042)https://davmorso.github.io/casa.github.io/ -->
 <html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Piso en Arenys de Mar</title>
-  <link rel="stylesheet" href="./Piso en Arenys de Mar_files/estilos.css">
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
+
   <!-- Presentación del piso -->
   <section id="descripcion" style="max-width: 800px; margin: auto; padding: 20px;">
-    <h1 style="text-align: left; max-width: 800px; margin: 0; padding: 0;">
-      <span style="float: left; margin-right: 10px;">🏡</span>
-      <span style="display: inline-block; margin-left: 40px;">
-        Piso de diseño de tres plantas en el centro de Arenys de Mar
-      </span>
-    </h1>
+    <h1 style="text-align: left; margin-left: 0;">🏡 Piso de diseño de tres plantas en el centro de Arenys de Mar</h1>
     <p>
       Ubicado en una de las zonas más céntricas de Arenys de Mar, pero en una calle tranquila con poco tráfico, este exclusivo piso de tres plantas destaca por su <strong>luz natural, diseño cuidado y distribución única</strong>.
       El edificio cuenta con solo dos vecinos, y cada vivienda ocupa una planta completa, ofreciendo máxima privacidad.
@@ -54,44 +49,29 @@
     <p style="font-weight: bold; text-align: center;">📌 Vale la pena visitarlo. Una oportunidad para quienes buscan luz, privacidad y diseño en el corazón de Arenys de Mar.</p>
   </section>
 
-  <!-- Galería de imágenes -->
-  <div class="galeria" id="galeria">
-    <h1>Primer Piso</h1>
-    <img src="./Piso en Arenys de Mar_files/casa24.jpeg" alt="Casa 24">
-    <img src="./Piso en Arenys de Mar_files/casa18.jpeg" alt="Casa 18">
-    <img src="./Piso en Arenys de Mar_files/casa19.jpeg" alt="Casa 19">
-    <img src="./Piso en Arenys de Mar_files/casa20.jpeg" alt="Casa 20">
-    <img src="./Piso en Arenys de Mar_files/casa21.jpeg" alt="Casa 21">
-    <img src="./Piso en Arenys de Mar_files/casa22.jpeg" alt="Casa 22">
-    <img src="./Piso en Arenys de Mar_files/casa23.jpeg" alt="Casa 23">
-    <img src="./Piso en Arenys de Mar_files/casa16.jpeg" alt="Casa 16">
-    <img src="./Piso en Arenys de Mar_files/casa25.jpeg" alt="Casa 25">
-    <img src="./Piso en Arenys de Mar_files/casa27.jpeg" alt="Casa 27">
-    <h1>Segundo Piso</h1>
-    <img src="./Piso en Arenys de Mar_files/casa6.jpeg" alt="Casa 6">
-    <img src="./Piso en Arenys de Mar_files/casa7.jpeg" alt="Casa 7">
-    <img src="./Piso en Arenys de Mar_files/casa8.jpeg" alt="Casa 8">
-    <img src="./Piso en Arenys de Mar_files/casa9.jpeg" alt="Casa 9">
-    <img src="./Piso en Arenys de Mar_files/casa11.jpeg" alt="Casa 11">
-    <img src="./Piso en Arenys de Mar_files/casa12.jpeg" alt="Casa 12">
-    <img src="./Piso en Arenys de Mar_files/casa13.jpeg" alt="Casa 13">
-    <img src="./Piso en Arenys de Mar_files/casa14.jpeg" alt="Casa 14">
-    <img src="./Piso en Arenys de Mar_files/casa15.jpeg" alt="Casa 15">
-    <h1>Tercer Piso</h1>
-    <img src="./Piso en Arenys de Mar_files/casa1.jpeg" alt="Casa 1">
-    <img src="./Piso en Arenys de Mar_files/casa2.jpeg" alt="Casa 2">
-    <img src="./Piso en Arenys de Mar_files/casa3.jpeg" alt="Casa 3">
-    <img src="./Piso en Arenys de Mar_files/casa4.jpeg" alt="Casa 4">
-    <img src="./Piso en Arenys de Mar_files/casa5.jpeg" alt="Casa 5">
+  <!-- Secciones para galerías -->
+  <div class="piso-seccion" id="primer-piso">
+    <h2>Primer Piso</h2>
+    <div class="imagenes"></div>
+  </div>
+
+  <div class="piso-seccion" id="segundo-piso">
+    <h2>Segundo Piso</h2>
+    <div class="imagenes"></div>
+  </div>
+
+  <div class="piso-seccion" id="tercer-piso">
+    <h2>Tercer Piso</h2>
+    <div class="imagenes"></div>
   </div>
 
   <!-- Modal -->
-  <div id="modal" class="modal">
-    <span id="cerrar">×</span>
-    <img class="modal-contenido" id="imagen-ampliada">
+  <div id="modal" class="modal" style="display:none;">
+    <span id="cerrar" style="cursor:pointer;">×</span>
+    <img class="modal-contenido" id="imagen-ampliada" alt="">
     <div id="caption"></div>
   </div>
 
-  <script src="./Piso en Arenys de Mar_files/galeria.js.descarga"></script>
+  <script src="galeria.js"></script>
 </body>
 </html>
