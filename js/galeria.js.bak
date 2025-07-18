@@ -19,7 +19,7 @@ function mostrarImagen(img) {
   imagenAmpliada.src = img.src;
   caption.textContent = img.alt;
 }
-
+ 
 cerrar.onclick = () => {
   modal.style.display = "none";
 };
