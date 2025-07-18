@@ -111,3 +111,8 @@ body {
   padding: 10px 20px;
   max-width: 90%;
 }
+h1.titulo-pegado-izquierda {
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
