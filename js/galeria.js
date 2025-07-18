@@ -16,9 +16,9 @@ function agregarImagen(numero) {
   galeria.appendChild(img);
 }
 
-// PRIMER PISO: 18–24 + 16
+// PRIMER PISO: 18–24, 16, 25–27
 crearTitulo("Primer Piso");
-[18, 19, 20, 21, 22, 23, 24, 16].forEach(agregarImagen);
+[18, 19, 20, 21, 22, 23, 24, 16, 25, 26, 27].forEach(agregarImagen);
 
 // SEGUNDO PISO: 6–15 (sin la 10)
 crearTitulo("Segundo Piso");
