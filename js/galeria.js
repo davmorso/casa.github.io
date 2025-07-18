@@ -11,7 +11,7 @@ function agregarImagen(numero) {
   if ([10, 17, 26].includes(numero)) return;
 
   const img = document.createElement("img");
-  img.src = `img/casa${numero}.jpg`;
+  img.src = `img/casa${numero}.jpeg`;
   img.alt = `Casa ${numero}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
