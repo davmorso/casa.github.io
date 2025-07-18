@@ -1,19 +1,13 @@
-const imagenes = [
-  { src: "img/casa1.jpeg", alt: "Sala principal" },
-  { src: "img/casa2.jpeg", alt: "Cocina" },
-  { src: "img/casa3.jpeg", alt: "Jardín" },
-  { src: "img/casa4.jpeg", alt: "Habitación" },
-];
-
 const galeria = document.getElementById("galeria");
 
-imagenes.forEach(imagen => {
+// Cargar 24 imágenes llamadas casa1.jpg a casa24.jpg desde la carpeta img/
+for (let i = 1; i <= 24; i++) {
   const img = document.createElement("img");
-  img.src = imagen.src;
-  img.alt = imagen.alt;
+  img.src = `img/casa${i}.jpg`;
+  img.alt = `Casa ${i}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
-});
+}
 
 const modal = document.getElementById("modal");
 const imagenAmpliada = document.getElementById("imagen-ampliada");
@@ -27,4 +21,5 @@ function mostrarImagen(img) {
 }
 
 cerrar.onclick = () => {
-  modal.style.displ
+  modal.style.display = "none";
+};
