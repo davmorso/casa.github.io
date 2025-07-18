@@ -1,9 +1,9 @@
 const galeria = document.getElementById("galeria");
 
-// Cargar 24 imágenes llamadas casa1.jpg a casa24.jpg desde la carpeta img/
+// Carga imágenes desde casa1.jpg hasta casa24.jpg
 for (let i = 1; i <= 24; i++) {
   const img = document.createElement("img");
-  img.src = `img/casa${i}.jpg`;
+  img.src = `img/casa${i}.jpg`;   // ← OJO: sin espacios
   img.alt = `Casa ${i}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
