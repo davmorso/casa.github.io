@@ -7,16 +7,17 @@ function crearTitulo(titulo) {
 }
 
 function agregarImagen(numero) {
-  if (numero === 10 || numero === 17) return; // Omitir casa10.jpeg y casa17.jpeg
+  // Omitir casa10.jpg, casa17.jpg y casa26.jpg
+  if ([10, 17, 26].includes(numero)) return;
 
   const img = document.createElement("img");
-  img.src = `img/casa${numero}.jpeg`;
+  img.src = `img/casa${numero}.jpg`;
   img.alt = `Casa ${numero}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
 }
 
-// PRIMER PISO: 18–24, 16, 25–27
+// PRIMER PISO: 18–24, 16, 25, 26, 27 → omitimos la 26
 crearTitulo("Primer Piso");
 [18, 19, 20, 21, 22, 23, 24, 16, 25, 26, 27].forEach(agregarImagen);
 
