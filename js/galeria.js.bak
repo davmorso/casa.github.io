@@ -3,7 +3,7 @@ const galeria = document.getElementById("galeria");
 // Carga imágenes desde casa1.jpg hasta casa24.jpg
 for (let i = 1; i <= 24; i++) {
   const img = document.createElement("img");
-  img.src = `img/casa${i}.jpg`;   // ← OJO: sin espacios
+  img.src = `img/casa${i}.jpeg`;   // ← OJO: sin espacios
   img.alt = `Casa ${i}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
