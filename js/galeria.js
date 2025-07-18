@@ -10,7 +10,7 @@ function agregarImagen(numero) {
   if (numero === 10 || numero === 17) return; // Omitir casa10.jpg y casa17.jpg
 
   const img = document.createElement("img");
-  img.src = `img/casa${numero}.jpg`;
+  img.src = `img/casa${numero}.jpeg`;
   img.alt = `Casa ${numero}`;
   img.addEventListener("click", () => mostrarImagen(img));
   galeria.appendChild(img);
