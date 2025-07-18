@@ -1,8 +1,23 @@
-<html>
-	<head>
-		<title>test</title>
-	</head>
-	<body>
-		test DAVID MORA
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería de mi casa</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <h1>Fotos de mi casa 🏡</h1>
+  <div class="galeria" id="galeria">
+    <!-- Las imágenes se agregan desde JavaScript -->
+  </div>
+
+  <div id="modal" class="modal">
+    <span id="cerrar">&times;</span>
+    <img class="modal-contenido" id="imagen-ampliada">
+    <div id="caption"></div>
+  </div>
+
+  <script src="js/galeria.js"></script>
+</body>
 </html>
