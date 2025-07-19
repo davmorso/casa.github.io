@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const pisos = {
     'primer-piso': [
+      { src: './img/casa24.jpeg', alt: 'Primera planta: comedor.' },
       { src: './img/casa18.jpeg', alt: 'Primera planta: lavadero / terraza' },
       { src: './img/casa19.jpeg', alt: 'Primera planta: lavadero / terraza' },
       { src: './img/casa20.jpeg', alt: 'Primera planta: vistas exterior' },
@@ -9,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { src: './img/casa23.jpeg', alt: 'Primera planta: comedor' },
       { src: './img/casa25.jpeg', alt: 'Primera planta: cocina' },
       { src: './img/casa27.jpeg', alt: 'Primera planta: cocina' },
-      { src: './img/casa16.jpeg', alt: 'Primera planta: acceso segunda planta' },
-      { src: './img/casa24.jpeg', alt: 'Primera planta: comedor.' }
+      { src: './img/casa16.jpeg', alt: 'Primera planta: acceso segunda planta' }      
     ],
     'segundo-piso': [
       { src: './img/casa7.jpeg', alt: 'Segunda planta: guardarropia' },
