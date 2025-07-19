@@ -105,13 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function cargarAnalytics() {
     const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX'; // ← Reemplaza por tu ID real
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LTP4SJWFBR'; // ← Reemplaza por tu ID real
     script.async = true;
     document.head.appendChild(script);
 
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true }); // ← Reemplaza también aquí
+    gtag('config', 'G-LTP4SJWFBR', { anonymize_ip: true }); // ← Reemplaza también aquí
   }
 });

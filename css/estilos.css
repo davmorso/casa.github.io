@@ -175,3 +175,24 @@ h1.titulo-pegado-izquierda {
   }
 }
 
+.titulo-movil { display: none; }
+  .titulo-escritorio { display: block; }
+
+  @media (max-width: 768px) {
+    .titulo-movil { display: block; }
+    .titulo-escritorio { display: none; }
+  }
+
+  /* Ejemplo de efecto espectacular para el header */
+  .header-espectacular {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    letter-spacing: 1.5px;
+    transition: background 0.6s ease;
+  }
+
+  .header-espectacular:hover {
+    background: linear-gradient(90deg, #ffcc00, #f39c12);
+    color: #182848;
+    cursor: default;
+  }
