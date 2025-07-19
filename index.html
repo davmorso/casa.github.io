@@ -1,7 +1,8 @@
-<!-- version 17 -->
+<!-- version 18 -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <title>Piso en Arenys de Mar</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Triplex - Piso de diseño de tres plantas en el centro de Arenys de Mar</title>
@@ -22,9 +23,15 @@
   <meta name="twitter:title" content="Triplex - Piso de diseño de tres plantas en Arenys de Mar" />
   <meta name="twitter:description" content="Descubre este exclusivo triplex con luz natural, privacidad y diseño único en Arenys de Mar." />
   <meta name="twitter:image" content="https://tu-dominio.com/img/portada.jpg" />
-  <title>Piso en Arenys de Mar</title>
+  
+  
   <link rel="stylesheet" href="css/estilos.css" />
+
+  <!-- Cookie Consent (usaremos un aviso ligero y funcional) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 </head>
+<meta name="google-site-verification" content="sHT64-8pI_MjA_3JmpP-Xt5A5Z7TYWhp6hdiEauIM6I" />
 <body>
 
   <header class="header-espectacular">
@@ -126,6 +133,14 @@
 	  <img class="modal-contenido" id="imagen-ampliada" alt="">
 	  <div id="caption"></div>
    </div>
+
+   <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #222; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; z-index: 10000;">
+    <span>Este sitio web utiliza cookies para análisis. Puedes aceptar o rechazar.</span>
+    <div>
+      <button id="aceptar-cookies" style="margin-right: 10px;">Aceptar</button>
+      <button id="rechazar-cookies">Rechazar</button>
+    </div>
+  </div>
 
   <!-- Script de galería -->
   <script src="js/galeria.js"></script>
