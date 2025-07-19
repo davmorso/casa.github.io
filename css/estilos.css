@@ -122,3 +122,9 @@ h1.titulo-pegado-izquierda {
     top: 15px;
   }
 }
+
+.parrafo-destacado {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1cm;
+}
