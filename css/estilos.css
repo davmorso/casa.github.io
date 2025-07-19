@@ -116,3 +116,25 @@ h1.titulo-pegado-izquierda {
   padding-left: 0;
   text-align: left;
 }
+
+.imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.imagenes img {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.imagenes img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
