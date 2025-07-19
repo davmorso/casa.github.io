@@ -138,3 +138,53 @@ h1.titulo-pegado-izquierda {
   transform: scale(1.05);
   cursor: pointer;
 }
+
+/* Fondo del modal */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+
+/* Imagen dentro del modal */
+.modal-contenido {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  object-fit: contain;
+}
+
+/* Texto debajo de la imagen */
+#caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+/* Botón cerrar */
+#cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#cerrar:hover {
+  color: #ccc;
+}

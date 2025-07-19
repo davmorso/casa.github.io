@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   Object.entries(pisos).forEach(([seccionId, imagenes]) => {
-	  debugger;
     const contenedor = document.querySelector(`#${seccionId} .imagenes`);
     imagenes.forEach(({src, alt}) => {
       const img = document.createElement('img');
