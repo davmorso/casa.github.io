@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
   };
 
-  const basePath = './Piso en Arenys de Mar_files/';
+  const basePath = './img/';
 
   // Filtrar y ordenar imágenes del primer piso para poner casa17 y casa24 al final
   if (pisos['primer-piso']) {
