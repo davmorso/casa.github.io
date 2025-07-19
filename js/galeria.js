@@ -1,34 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
   const pisos = {
     'primer-piso': [
-      {src: 'casa18.jpeg', alt: 'Casa 18'},
-      {src: 'casa19.jpeg', alt: 'Casa 19'},
-      {src: 'casa20.jpeg', alt: 'Casa 20'},
-      {src: 'casa21.jpeg', alt: 'Casa 21'},
-      {src: 'casa22.jpeg', alt: 'Casa 22'},
-      {src: 'casa23.jpeg', alt: 'Casa 23'},
-      {src: 'casa16.jpeg', alt: 'Casa 16'},
-      {src: 'casa25.jpeg', alt: 'Casa 25'},
-      {src: 'casa27.jpeg', alt: 'Casa 27'},
-      {src: 'casa24.jpeg', alt: 'Casa 24'} // esta va al final
+	  {src: 'casa24.jpeg', alt: 'Primera planta: comedor.'}
+      {src: 'casa18.jpeg', alt: 'Primera planta: lavadero / terraza'},
+      {src: 'casa19.jpeg', alt: 'Primera planta: lavadero / terraza'},
+      {src: 'casa20.jpeg', alt: 'Primera planta: vistas exterior'},
+      {src: 'casa21.jpeg', alt: 'Primera planta: comedor'},
+      {src: 'casa22.jpeg', alt: 'Primera planta: comedor'},
+      {src: 'casa23.jpeg', alt: 'Primera planta: comedor'},
+      {src: 'casa25.jpeg', alt: 'Primera planta: cocina'},
+      {src: 'casa27.jpeg', alt: 'Primera planta: cocina'},
+	  {src: 'casa16.jpeg', alt: 'Primera planta: acceso segunda planta'}
+       
     ],
     'segundo-piso': [
-      {src: 'casa6.jpeg', alt: 'Casa 6'},
-      {src: 'casa7.jpeg', alt: 'Casa 7'},
-      {src: 'casa8.jpeg', alt: 'Casa 8'},
-      {src: 'casa9.jpeg', alt: 'Casa 9'},
-      {src: 'casa11.jpeg', alt: 'Casa 11'},
-      {src: 'casa12.jpeg', alt: 'Casa 12'},
-      {src: 'casa13.jpeg', alt: 'Casa 13'},
-      {src: 'casa14.jpeg', alt: 'Casa 14'},
-      {src: 'casa15.jpeg', alt: 'Casa 15'}
+      {src: 'casa7.jpeg', alt: 'Segunda planta: guardarropia'},
+      {src: 'casa8.jpeg', alt: 'Segunda planta: passillo suite'},
+	  {src: 'casa11.jpeg', alt: 'Segunda planta: habitación'},
+      {src: 'casa11.jpeg', alt: 'Segunda planta: habitación'},
+      {src: 'casa12.jpeg', alt: 'Segunda planta: terraza habitación'},
+      {src: 'casa13.jpeg', alt: 'Segunda planta: lavabo suite'},
+      {src: 'casa14.jpeg', alt: 'Segunda planta: lavabo suite'},
+      {src: 'casa15.jpeg', alt: 'Segunda planta: lavabo suite'},
+	  {src: 'casa6.jpeg', alt: 'Segunda planta: acceso tercera planta'},
     ],
     'tercer-piso': [
-      {src: 'casa1.jpeg', alt: 'Casa 1'},
-      {src: 'casa2.jpeg', alt: 'Casa 2'},
-      {src: 'casa3.jpeg', alt: 'Casa 3'},
-      {src: 'casa4.jpeg', alt: 'Casa 4'},
-      {src: 'casa5.jpeg', alt: 'Casa 5'}
+      {src: 'casa1.jpeg', alt: 'Tercera planta: pasillo suite'},
+      {src: 'casa2.jpeg', alt: 'Tercera planta: terraza suite 2'},
+      {src: 'casa3.jpeg', alt: 'Tercera planta: terraza suite 2'},
+      {src: 'casa4.jpeg', alt: 'Tercera planta: habitación'},
+      {src: 'casa5.jpeg', alt: 'Tercera planta: habitación'}
+	  {src: 'casa28.jpeg', alt: 'Tercera planta: despacho suite'}
     ]
   };
 
