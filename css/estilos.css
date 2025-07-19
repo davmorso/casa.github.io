@@ -188,3 +188,6 @@ h1.titulo-pegado-izquierda {
 #cerrar:hover {
   color: #ccc;
 }
+.modal {
+  display: none;
+}
