@@ -4,8 +4,35 @@
   <meta charset="UTF-8">
   <title>Política de Privacidad</title>
   <style>
-    body { max-width: 800px; margin: auto; padding: 20px; font-family: sans-serif; }
-    h1 { text-align: center; }
+    body {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+    }
+    button {
+      margin-top: 10px;
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #222;
+    }
   </style>
 </head>
 <body>
@@ -22,8 +49,22 @@
 
   <h2>Responsable</h2>
   <p>Responsable del tratamiento: David.<br>
-  Email de contacto: dmoraroca@gmail.com</p>
+     Email de contacto: <a href="mailto:dmoraroca@gmail.com">dmoraroca@gmail.com</a></p>
 
   <p>Para cualquier duda sobre privacidad, puedes escribirnos.</p>
+
+  <p>Este sitio web cumple con el Reglamento General de Protección de Datos (UE) 2016/679 (RGPD) y la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSI-CE).</p>
+
+  <footer>
+    <p>Si deseas aceptar cookies y permitir el uso de Google Analytics, pulsa el siguiente botón:</p>
+    <button onclick="aceptarCookies()">Aceptar cookies</button>
+  </footer>
+
+  <script>
+    function aceptarCookies() {
+      localStorage.setItem('cookies_aceptadas', 'true');
+      alert('Has aceptado las cookies. Google Analytics se activará en tu próxima visita.');
+    }
+  </script>
 </body>
 </html>

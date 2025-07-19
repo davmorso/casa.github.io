@@ -196,3 +196,67 @@ h1.titulo-pegado-izquierda {
   color: #182848;
   cursor: default;
 }
+
+.modal {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  flex-direction: column;
+}
+
+.modal-contenido {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #000;
+}
+
+#caption {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  max-width: 90%;
+  text-align: center;
+}
+
+#cerrar {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10001;
+}
+
+#anterior, #siguiente {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10001;
+  padding: 0 15px;
+}
+
+#anterior {
+  left: 20px;
+}
+
+#siguiente {
+  right: 20px;
+}
+
+.cookie-banner {
+  display: none;
+}
