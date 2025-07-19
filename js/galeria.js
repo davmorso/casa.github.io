@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const pisos = {
     'primer-piso': [
-	  {src: 'casa24.jpeg', alt: 'Primera planta: comedor.'}
+	  {src: 'casa24.jpeg', alt: 'Primera planta: comedor.'},
       {src: 'casa18.jpeg', alt: 'Primera planta: lavadero / terraza'},
       {src: 'casa19.jpeg', alt: 'Primera planta: lavadero / terraza'},
       {src: 'casa20.jpeg', alt: 'Primera planta: vistas exterior'},
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {src: 'casa2.jpeg', alt: 'Tercera planta: terraza suite 2'},
       {src: 'casa3.jpeg', alt: 'Tercera planta: terraza suite 2'},
       {src: 'casa4.jpeg', alt: 'Tercera planta: habitación'},
-      {src: 'casa5.jpeg', alt: 'Tercera planta: habitación'}
+      {src: 'casa5.jpeg', alt: 'Tercera planta: habitación'},
 	  {src: 'casa28.jpeg', alt: 'Tercera planta: despacho suite'}
     ]
   };
