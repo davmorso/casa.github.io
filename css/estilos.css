@@ -128,3 +128,50 @@ h1.titulo-pegado-izquierda {
   text-align: center;
   margin-top: 1cm;
 }
+
+.header-espectacular {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-espectacular h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: glow 3s ease-in-out infinite alternate;
+  text-shadow:
+    0 0 5px #00fff7,
+    0 0 10px #00fff7,
+    0 0 20px #00fff7,
+    0 0 40px #00fff7,
+    0 0 80px #00fff7;
+}
+
+/* Animación de brillo suave */
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 5px #00fff7,
+      0 0 10px #00fff7,
+      0 0 20px #00fff7,
+      0 0 40px #00fff7,
+      0 0 80px #00fff7;
+    color: #aaffff;
+  }
+  to {
+    text-shadow:
+      0 0 15px #00e5ff,
+      0 0 25px #00e5ff,
+      0 0 50px #00e5ff,
+      0 0 80px #00e5ff,
+      0 0 120px #00e5ff;
+    color: #e0ffff;
+  }
+}
+
