@@ -109,19 +109,34 @@ h1.titulo-pegado-izquierda {
   color: #ff5555;
 }
 
-/* Responsive para móviles */
-@media (max-width: 600px) {
-  .imagenes img {
-    width: 70px;
-    height: 52px;
-  }
-
-  #cerrar {
-    font-size: 2rem;
-    right: 15px;
-    top: 15px;
-  }
+#anterior, #siguiente {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  user-select: none;
 }
+
+#anterior:hover, #siguiente:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Posición de botones en desktop */
+#anterior {
+  left: 10px;
+}
+
+#siguiente {
+  right: 10px;
+}
+
 
 .parrafo-destacado {
   font-weight: bold;
@@ -178,11 +193,6 @@ h1.titulo-pegado-izquierda {
 .titulo-movil { display: none; }
 .titulo-escritorio { display: block; }
 
-@media (max-width: 768px) {
-  .titulo-movil { display: block; }
-  .titulo-escritorio { display: none; }
-}
-
 /* Ejemplo de efecto espectacular para el header */
 .header-espectacular {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -235,28 +245,37 @@ h1.titulo-pegado-izquierda {
   z-index: 10001;
 }
 
-#anterior, #siguiente {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 40px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  z-index: 10001;
-  padding: 0 15px;
-}
 
-#anterior {
-  left: 20px;
-}
-
-#siguiente {
-  right: 20px;
-}
 
 .cookie-banner {
   display: none;
+}
+
+/* Responsive para móviles */
+@media (max-width: 1455px) {
+  .titulo-movil { display: block; }
+  .titulo-escritorio { display: none; }
+  
+  .imagenes img {
+    width: 70px;
+    height: 52px;
+  }
+
+#anterior, #siguiente {
+    position: static;
+    transform: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    margin: 5px 10px;
+  }
+
+
+  /* Ocultar texto original que venía de los botones */
+  #anterior, #siguiente {
+    color: white !important;
+  }
+
 }
