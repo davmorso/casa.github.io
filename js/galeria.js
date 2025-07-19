@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const pisos = {
     'primer-piso': [
-      {src: 'casa24.jpeg', alt: 'Casa 24'},
       {src: 'casa18.jpeg', alt: 'Casa 18'},
       {src: 'casa19.jpeg', alt: 'Casa 19'},
       {src: 'casa20.jpeg', alt: 'Casa 20'},
@@ -10,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
       {src: 'casa23.jpeg', alt: 'Casa 23'},
       {src: 'casa16.jpeg', alt: 'Casa 16'},
       {src: 'casa25.jpeg', alt: 'Casa 25'},
-      {src: 'casa27.jpeg', alt: 'Casa 27'}
+      {src: 'casa27.jpeg', alt: 'Casa 27'},
+      {src: 'casa24.jpeg', alt: 'Casa 24'} // esta va al final
     ],
     'segundo-piso': [
       {src: 'casa6.jpeg', alt: 'Casa 6'},
@@ -32,35 +32,40 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
   };
 
-  const basePath = './img/';
+  const basePath = './img/'; // <-- Asegúrate de que las imágenes estén en esta carpeta
 
-  // Filtrar y ordenar imágenes del primer piso para poner casa17 y casa24 al final
+  // Mover casa24.jpeg al final si existe
   if (pisos['primer-piso']) {
     const primero = pisos['primer-piso'];
-    const sinExcluidos = primero.filter(img => img.src !== 'casa17.jpeg' && img.src !== 'casa24.jpeg');
-    const excluidos = primero.filter(img => img.src === 'casa17.jpeg' || img.src === 'casa24.jpeg');
-    pisos['primer-piso'] = sinExcluidos.concat(excluidos);
+    const resto = primero.filter(img => img.src !== 'casa24.jpeg');
+    const ultima = primero.filter(img => img.src === 'casa24.jpeg');
+    pisos['primer-piso'] = [...resto, ...ultima];
   }
 
+  // Cargar imágenes en sus secciones
   Object.entries(pisos).forEach(([seccionId, imagenes]) => {
     const contenedor = document.querySelector(`#${seccionId} .imagenes`);
+    if (!contenedor) return;
+
     imagenes.forEach(({src, alt}) => {
       const img = document.createElement('img');
       img.src = basePath + src;
       img.alt = alt;
+      img.loading = 'lazy';
       img.style.cursor = 'pointer';
       contenedor.appendChild(img);
     });
   });
 
+  // Modal funcional
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('imagen-ampliada');
   const captionText = document.getElementById('caption');
   const cerrar = document.getElementById('cerrar');
 
   document.body.addEventListener('click', (e) => {
-    if(e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('imagenes')) {
-      modal.style.display = 'block';
+    if (e.target.tagName === 'IMG' && e.target.parentElement.classList.contains('imagenes')) {
+      modal.style.display = 'flex';
       modalImg.src = e.target.src;
       captionText.textContent = e.target.alt;
     }
@@ -71,6 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   modal.addEventListener('click', e => {
-    if(e.target === modal) modal.style.display = 'none';
+    if (e.target === modal) modal.style.display = 'none';
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      modal.style.display = 'none';
+    }
   });
 });
