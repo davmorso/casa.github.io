@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pisos = {
     'primer-piso': [
       {src: 'casa24.jpeg', alt: 'Casa 24'},
-      {src: 'casa17.jpeg', alt: 'Casa 17'},
       {src: 'casa18.jpeg', alt: 'Casa 18'},
       {src: 'casa19.jpeg', alt: 'Casa 19'},
       {src: 'casa20.jpeg', alt: 'Casa 20'},
@@ -44,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   Object.entries(pisos).forEach(([seccionId, imagenes]) => {
+	  debugger;
     const contenedor = document.querySelector(`#${seccionId} .imagenes`);
     imagenes.forEach(({src, alt}) => {
       const img = document.createElement('img');
