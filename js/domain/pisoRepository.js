@@ -28,7 +28,9 @@ class PisoRepository {
         { src: './img/casa3.jpeg', alt: 'Tercera planta: baño' },
         { src: './img/casa4.jpeg', alt: 'Tercera planta: terraza' },
         { src: './img/casa5.jpeg', alt: 'Tercera planta: terraza' },
-        { src: './img/casa6.jpeg', alt: 'Tercera planta: baño' }
+        { src: './img/casa6.jpeg', alt: 'Tercera planta: escaleras' },
+        { src: './img/casa29.jpeg', alt: 'Tercera planta: baño' },
+        { src: './img/casa30.jpeg', alt: 'Tercera planta: baño' }
       ]
     };
   }
